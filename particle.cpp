@@ -1,6 +1,8 @@
-#include <iostream.h>
-#include <stdlib.h>
+#include <iostream>
+#include <stdlib>
 double myrand();
+using namespace std;
+
 
 
 main(){
