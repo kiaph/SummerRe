@@ -12,10 +12,12 @@
 #define simBox_h 
 
 #include <iostream>
-class SimBox 
+class Cell;
+class SimBox
 {
 public:
 	SimBox(int, int, int, int, int, int);
+	SimBox(int);
 	SimBox();  					// default constructors
 	int getX0();					// returns X0
 	int getXR();					// returns XR

@@ -11,17 +11,45 @@
 #include <iostream>
 #include <stdlib.h>
 #include "HDR001/simBox.h"
+#include "HDR001/cell.h"
 
 //setting up the constructors
 
-SimBox::SimBox(int X0 = 0, int XR = 10, int Y0 = 0, int YT = 10, int p0 = 0, int pR = 0)
+SimBox::SimBox(int pX0)
+{
+	SimBox::X0 = pX0;
+	SimBox::XR = 10; 
+	SimBox::Y0 = 0; 
+	SimBox::YT = 10; 
+	SimBox::p0 = 0; 
+	SimBox::pR = 0;
+	std::cout << "This is SimBox -1001000" << std::endl;
+	
+	
+}
+SimBox::SimBox(int pX0 = 0, int pXR = 10, int pY0 = 0, int pYT = 10, int pp0 = 0, int ppR = 0)
 {
 	std::cout << "This is SimBox 01001000" << std::endl;
+	SimBox::X0 = pX0;
+	SimBox::XR = pXR;
+	SimBox::Y0 = pY0;
+	SimBox::YT = pYT;
+	SimBox::p0 = pp0;
+	SimBox::pR = ppR;
+
 }
 SimBox::SimBox()
 {
-	int X0 = 0; int XR = 10; int Y0 = 0; int YT = 10; int p0 = 0; int pR = 0;	
+	//int X0 = 0; int XR = 10; int Y0 = 0; int YT = 10; int p0 = 0; int pR = 0;
+	this->X0 = 1;
+	this->XR = 10;
+	this->Y0 = 0;
+	this->YT = 10;
+	this->p0 = 0;
+	this->pR = 0;
+
 	std::cout << "This is SimBox ------" << std::endl;
+	
 }
 
 	int SimBox::getX0(){return X0;}				

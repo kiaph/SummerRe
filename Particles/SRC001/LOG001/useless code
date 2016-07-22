@@ -1,22 +1,8 @@
-//
-	//	This is a Test Main
-	//
-//
-//
-//
-//
-//
-//
+// 	//	//
+			This code was used in debugging when I added in the SimBox class.
+//	//	//
 
 
-#include <iostream>
-#include <stdlib.h>
-#include "./HDR001/parxy.h"
-#include "./HDR001/simBox.h"
-
-
-main()
-{
 
 	std::cout << "Testing value for pVx" << std::endl;
 	std::cout << "Testing a SimBox Value" << std::endl;
@@ -29,11 +15,3 @@ main()
 	SimBox nine = SimBox(5);
 	std::cout << TheObjectofSimBox.getX0() << std::endl;
 	std::cout << nine.getX0() << std::endl;
-	nine.setX0(2);
-	std::cout << nine.getX0() << std::endl;
-	
-
-
-
-};
-

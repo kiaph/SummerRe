@@ -8,10 +8,10 @@
 #
 vpath %.cpp ../SRC001
 CC = g++
-#PARXPACK = main.cpp parx.cpp cell.cpp exforce.cpp inforce.cpp simbox.cpp
-PARXPACK = main.cpp parxy.cpp simBox.cpp
+#PARXPACK = main.cpp parx.cpp cell.cpp inforce.cpp simbox.cpp
+PARXPACK = main.cpp parxy.cpp simBox.cpp 
 #OBJECTS = main.o parx.o cell.o exforce.o inforce.o simbox.o
-OBJECTS = main.o parxy.o simBox.h
+OBJECTS = main.o parxy.o simBox.h 
 CFLAGS = -I.
 #HEADS = main.h parx.h cell.h exforoce.h inforce.h simbox.h
 HEADS = parxy.h
